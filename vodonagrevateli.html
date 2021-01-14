@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Список продуктов - UiKit</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		
+		
+    </head>
+    <body>
+	<div class="uk-container">
+		<header>
+			<div class="uk-navbar-container tm-navbar-container navbar-wrapper" uk-sticky="cls-active: tm-navbar-container-fixed">
+                <div class="uk-container" uk-navbar>
+                    <div class="uk-navbar-left uk-margin-small-left">
+					<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" uk-navbar-toggle-icon href="#"></a>
+					<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+								<div class="uk-offcanvas-bar">
+									
+									<button class="uk-offcanvas-close" type="button" uk-close></button>
+									<div class="uk-card uk-card-body uk-width-1-2@s">
+										<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+											<li class="uk-parent">
+												<a href="#">Каталог</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Водонагреватели</a></li>
+													<li><a href="#">Конвекторы</a></li>
+													<li><a href="#">Сушилки</a></li>
+													<li><a href="#">Обогреватели</a></li>
+													<li><a href="#">Тепловентиляторы</a></li>
+													<li><a href="#">Акции</a></li>
+													<li><a href="#">Не производится</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Оплата</a></li>
+											<li class="uk-parent">
+												<a href="#">Информация</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Для дилеров</a></li>
+													<li><a href="#">Монтаж</a></li>
+													<li><a href="#">Гарантия</a></li>
+													<li><a href="#">Сертификаты</a></li>
+													<li><a href="#">Условия возврата</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Условия возврата</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+					
+					
+					
+					<a class="uk-navbar-item uk-logo" href="index.html"><img src="image/stiebel-eltron.svg" width="150" alt="Logo" uk-img></a>
+                        <nav class="uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <!-- <li><a href="catalog.html">Каталог<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="subcategory.html">Водонагреватели</a></li>
+                                                            <li><a href="subcategory.html">Конвекторы</a></li>
+                                                            <li><a href="subcategory.html">Сушилки</a></li>
+                                                            <li><a href="subcategory.html">Обогреватели</a></li>
+                                                            <li><a href="subcategory.html">Тепловентиляторы</a></li>
+                                                            <li><a href="subcategory.html">Акции</a></li>
+                                                            <li><a href="subcategory.html">Не производится</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <li><a href="dostavka.html">Доставка</a></li>
+                                <li><a href="oplata.html">Оплата</a></li>
+								
+								<li><a href="catalog.html">Информация<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="dealers.html">Для дилеров</a></li>
+                                                            <li><a href="montazh.html">Монтаж</a></li>
+                                                            <li><a href="garantia.html">Гарантия</a></li>
+                                                            <li><a href="subcategory.html">Сертификаты</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+								<li><a href="about.html">Видео</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="uk-navbar-right uk-margin-small-right">
+					<a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+                        <div class="uk-navbar-dropdown uk-padding-small" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                            <div class="uk-container">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1"><input class="uk-search-input" type="search" placeholder="Найти…" autofocus></form>
+                                    </div>
+                                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close></a></div>
+                                </div>
+                            </div>
+                        </div>
+						<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false">
+						<span uk-icon="cart"></span></a>
+						<div id="cart-offcanvas" uk-offcanvas>
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+								<h3>Title</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+			<nav class="uk-navbar-container uk-visible@m uk-padding uk-background-default" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+							<li><a href="#">Водонагреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                            <li><a href="#">Сушилки</a></li>
+                            <li><a href="#">Обогреватели</a></li>
+                            <li><a href="#">Тепловентиляторы</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Не производится</a></li>
+						</ul>
+					</div>
+			</nav>
+		</header>
+		<main>
+			<div class="uk-section">
+				<ul class="uk-breadcrumb">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li class="uk-disabled"><a>Водонагреватели</a></li>
+					<li><a href="#">Конвекторы</a></li>
+					<li><a href="#">Сушилки</a></li>
+					<li><a href="#">Обогреватели</a></li>
+					<li><a href="#">Тепловентиляторы</a></li>
+				</ul>
+			</div>
+			<div class="uk-section">
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">По эксплуатации</h3>
+					<p class="uk-text-justify uk-padding">В этом разделе собраны самые популярные виды водонагревателей по эксплуатации и применению. 
+						Теперь водонагреватель выбрать ещё проще с помощью разделов и фильтров на страницах. Так же вы 
+						можете позвонить по нашему телефону и получить профессиональную консультацию в выборе 
+						водонагревателя для ваших целей.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Накопительные</h3>
+					<p class="uk-text-justify uk-padding">В накопительных водонагревателях нагрев воды происходит заранее, этим обусловлена их экономичность.
+					В водонагревателях этого типа горячая вода находится постоянно внутри и подогревается по мере расходования. Теплоизоляция позволяет 
+					сохранять температуру воды подобно термосу. Накопительные водонагреватели могут снабжать горячей водой несколько точек водоразбора. 
+					Основной недостаток это ограниченный объем потребляемой горячей воды в единицу времени.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Проточные</h3>
+					<p class="uk-text-justify uk-padding">Проточные водонагреватели способны выдавать теплую воду сразу, не требуя время для нагрева. 
+					Характеризуются малыми габаритами. Обычно предназначены для одной водоразборной точки, и для маленького объема протекающей воды, 
+					отлично подходят для мелких бытовых нужд – умывания или мытья посуды. Основной недостаток это относительно низкая температура 
+					нагрева воды и повышенное энергопотребление.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Косвенного нагрева</h3>
+					<p class="uk-text-justify uk-padding">Бойлеры косвенного нагрева представляют собой водонагреватели с теплообменником. Теплообменник 
+					нагревает холодную воду за счет циркулирующего в нем горячего теплоносителя. Оборудование незаменимо в домах, где централизованное 
+					снабжение горячей водой отсутствует. Оно подсоединяется к электрической сети или системе отопления. Бойлеры косвенного нагрева 
+					обеспечивают нагрев большого количество воды в минимальные промежутки времени, что является их неоспоримым преимуществом.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Проточно-накопительные</h3>
+					<p class="uk-text-justify uk-padding">В этом разделе собраны самые популярные виды водонагревателей по эксплуатации и применению. 
+						Теперь водонагреватель выбрать ещё проще с помощью разделов и фильтров на страницах. Так же вы 
+						можете позвонить по нашему телефону и получить профессиональную консультацию в выборе 
+						водонагревателя для ваших целей.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Промышленные</h3>
+					<p class="uk-text-justify uk-padding">В накопительных водонагревателях нагрев воды происходит заранее, этим обусловлена 
+					их экономичность. В водонагревателях этого типа горячая вода находится постоянно внутри и подогревается по мере расходования. 
+					Теплоизоляция позволяет сохранять температуру воды подобно термосу. Накопительные водонагреватели могут снабжать горячей водой 
+					несколько точек водоразбора. Основной недостаток это ограниченный объем потребляемой горячей воды в единицу времени.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Для квартиры</h3>
+					<p class="uk-text-justify uk-padding">В этом разделе собраны самые популярные виды водонагревателей по эксплуатации и применению. 
+						Теперь водонагреватель выбрать ещё проще с помощью разделов и фильтров на страницах. Так же вы 
+						можете позвонить по нашему телефону и получить профессиональную консультацию в выборе 
+						водонагревателя для ваших целей.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Для дачи</h3>
+					<p class="uk-text-justify uk-padding">В накопительных водонагревателях нагрев воды происходит заранее, этим обусловлена 
+					их экономичность. В водонагревателях этого типа горячая вода находится постоянно внутри и подогревается по мере расходования. 
+					Теплоизоляция позволяет сохранять температуру воды подобно термосу. Накопительные водонагреватели могут снабжать горячей водой 
+					несколько точек водоразбора. Основной недостаток это ограниченный объем потребляемой горячей воды в единицу времени.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Для коттеджа</h3>
+					<p class="uk-text-justify uk-padding">В этом разделе собраны самые популярные виды водонагревателей по эксплуатации и применению. 
+						Теперь водонагреватель выбрать ещё проще с помощью разделов и фильтров на страницах. Так же вы 
+						можете позвонить по нашему телефону и получить профессиональную консультацию в выборе 
+						водонагревателя для ваших целей.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Газовые</h3>
+					<p class="uk-text-justify uk-padding">В накопительных водонагревателях нагрев воды происходит заранее, этим обусловлена 
+					их экономичность. В водонагревателях этого типа горячая вода находится постоянно внутри и подогревается по мере расходования. 
+					Теплоизоляция позволяет сохранять температуру воды подобно термосу. Накопительные водонагреватели могут снабжать горячей водой 
+					несколько точек водоразбора. Основной недостаток это ограниченный объем потребляемой горячей воды в единицу времени.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Бытовые кипятильник</h3>
+					<p class="uk-text-justify uk-padding">В этом разделе собраны самые популярные виды водонагревателей по эксплуатации и применению. 
+						Теперь водонагреватель выбрать ещё проще с помощью разделов и фильтров на страницах. Так же вы 
+						можете позвонить по нашему телефону и получить профессиональную консультацию в выборе 
+						водонагревателя для ваших целей.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Комплектующие</h3>
+					<p class="uk-text-justify uk-padding">В накопительных водонагревателях нагрев воды происходит заранее, этим обусловлена 
+					их экономичность. В водонагревателях этого типа горячая вода находится постоянно внутри и подогревается по мере расходования. 
+					Теплоизоляция позволяет сохранять температуру воды подобно термосу. Накопительные водонагреватели могут снабжать горячей водой 
+					несколько точек водоразбора. Основной недостаток это ограниченный объем потребляемой горячей воды в единицу времени.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+				
+		</div>		
+			
+
+		</main>
+		<footer>
+			<div class="uk-section uk-section-muted footer-wrapper">
+				<div class="uk-container">
+					<div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+						<div>
+							<ul class="uk-nav uk-nav-default footer-catalogue uk-margin-medium-left">
+								<li class="uk-nav-header uk-active"><a href="index.html"><img src="image/stiebel-eltron.svg" width="200" alt="Stiebel Eltron"></a></li>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:+74955653482">+7 495 565 34 82</a></p>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:++78003332174">+7 (800) 333 21 74</a></p>
+								<p><span uk-icon="mail" class="uk-margin-small-right"></span><a href="mailto:info@stiebel-gmbh.ru">info@stiebel-gmbh.ru</a></p>
+								<p><span uk-icon="youtube" class="uk-margin-small-right"></span>Наш канал на YouTube</p>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">Каталог</li>
+								<li><a href="#">Водонагреватели</a></li>
+								<li><a href="#">Конвекторы</a></li>
+								<li><a href="#">Сушилки</a></li>
+								<li><a href="#">Обогреватели</a></li>
+								<li><a href="#">Тепловентиляторы</a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">						
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">Информация</li>
+							    <li><a  href="#modal-center" uk-toggle>Рейтинг магазина</a></li>
+									<div id="modal-center" class="uk-flex-top" uk-modal>
+									<div class="uk-modal-dialog uk-modal-body uk-width-auto uk-margin-auto-vertical">
+										<button class="uk-modal-close-default" type="button" uk-close></button>
+										<img src="image/rating_5_3.png" alt="Рейтинг магазина" uk-img/>
+									</div>
+									</div>
+										
+								<li><a href="#">Гарантия</a></li>	
+								<li><a href="#">Сертификаты</a></li>	
+								<li><a href="#">Условия возврата</a></li>	
+								<li><a href="#">Политика конфиденциальности</a></li>	
+							
+							</ul>	
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">О компании</li>
+								<li><a href="#">О бренде Stiebel Eltron</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости и статьи</a></li>
+								
+							</ul>	
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+	

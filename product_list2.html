@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Список продуктов с фильтром - UiKit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="uk-container">
+		<header>
+			<div class="uk-navbar-container tm-navbar-container navbar-wrapper" uk-sticky="cls-active: tm-navbar-container-fixed">
+				<div class="uk-container" uk-navbar>
+					<div class="uk-navbar-left uk-margin-small-left">
+						<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" uk-navbar-toggle-icon href="#"></a>
+						<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+								<div class="uk-card uk-card-body uk-width-1-2@s">
+									<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+										<li class="uk-parent">
+											<a href="#">Каталог</a>
+											<ul class="uk-nav-sub">
+												<li><a href="#">Водонагреватели</a></li>
+												<li><a href="#">Конвекторы</a></li>
+												<li><a href="#">Сушилки</a></li>
+												<li><a href="#">Обогреватели</a></li>
+												<li><a href="#">Тепловентиляторы</a></li>
+												<li><a href="#">Акции</a></li>
+												<li><a href="#">Не производится</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Доставка</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li class="uk-parent">
+											<a href="#">Информация</a>
+											<ul class="uk-nav-sub">
+												<li><a href="#">Для дилеров</a></li>
+												<li><a href="#">Монтаж</a></li>
+												<li><a href="#">Гарантия</a></li>
+												<li><a href="#">Сертификаты</a></li>
+												<li><a href="#">Условия возврата</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Видео</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Условия возврата</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<a class="uk-navbar-item uk-logo" href="index.html"><img src="image/stiebel-eltron.svg" width="150" alt="Logo" uk-img></a>
+						<nav class="uk-visible@m">
+							<ul class="uk-navbar-nav">
+								<!-- <li><a href="catalog.html">Каталог<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="subcategory.html">Водонагреватели</a></li>
+                                                            <li><a href="subcategory.html">Конвекторы</a></li>
+                                                            <li><a href="subcategory.html">Сушилки</a></li>
+                                                            <li><a href="subcategory.html">Обогреватели</a></li>
+                                                            <li><a href="subcategory.html">Тепловентиляторы</a></li>
+                                                            <li><a href="subcategory.html">Акции</a></li>
+                                                            <li><a href="subcategory.html">Не производится</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> -->
+								<li><a href="dostavka.html">Доставка</a></li>
+								<li><a href="oplata.html">Оплата</a></li>
+
+								<li><a href="catalog.html">Информация<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+									<div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+										<div class="uk-container">
+											<ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+												<li>
+													<div class="uk-margin-top uk-margin-bottom">
+														<ul class="uk-nav uk-nav-default">
+															<li><a href="dealers.html">Для дилеров</a></li>
+															<li><a href="montazh.html">Монтаж</a></li>
+															<li><a href="garantia.html">Гарантия</a></li>
+															<li><a href="subcategory.html">Сертификаты</a></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="about.html">Видео</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="uk-navbar-right uk-margin-small-right">
+						<a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+						<div class="uk-navbar-dropdown uk-padding-small" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+							<div class="uk-container">
+								<div class="uk-grid-small uk-flex-middle" uk-grid>
+									<div class="uk-width-expand">
+										<form class="uk-search uk-search-navbar uk-width-1-1"><input class="uk-search-input" type="search" placeholder="Найти…" autofocus></form>
+									</div>
+									<div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close></a></div>
+								</div>
+							</div>
+						</div>
+						<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false">
+							<span uk-icon="cart"></span></a>
+						<div id="cart-offcanvas" uk-offcanvas="flip: true; overlay: true">
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+								<h3>Ваша корзина</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<nav class="uk-navbar-container uk-visible@m uk-padding uk-background-default" uk-navbar>
+				<div class="uk-navbar-center">
+					<ul class="uk-navbar-nav">
+						<li><a href="#">Водонагреватели</a></li>
+						<li><a href="#">Конвекторы</a></li>
+						<li><a href="#">Сушилки</a></li>
+						<li><a href="#">Обогреватели</a></li>
+						<li><a href="#">Тепловентиляторы</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Не производится</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="uk-section">
+				<ul class="uk-breadcrumb uk-margin-left">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#"><a>Водонагреватели</a></li>
+					<li class="uk-disabled">По экспулатации</li>
+				</ul>
+			</div>
+
+			<h2 class="uk-text-center">По эксплуатации</h2>
+			<div class="uk-section">
+				<div uk-filter="target: .js-filter">
+					<div uk-grid>
+						
+						<button class="uk-button uk-button-default uk-hidden@m uk-margin-medium-top uk-margin-medium-left" type="button" uk-toggle="target: #filter-offcanvas-flip">Выбрать</button>
+
+						<div id="filter-offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+								<div class="uk-card uk-card-body uk-width-1-2@s">
+									<div class="uk-card uk-card-body" uk-sticky="top: #my-id; offset: 110">
+										<span class="uk-nav-header">Цвет</span>
+										<ul class="uk-nav uk-nav-default">
+											<li uk-filter-control="filter: [data-color='red']; group: data-color"><a href="#">Красный</a></li>
+											<li uk-filter-control="filter: [data-color='green']; group: data-color"><a href="#">Зеленый</a></li>
+											<li uk-filter-control="filter: [data-color='blue']; group: data-color"><a href="#">Синий</a></li>
+										</ul>
+										<span class="uk-nav-header">Цена</span>
+										<ul class="uk-nav uk-nav-default">
+											<li uk-filter-control="filter: [data-price='expensive']; group: price"><a href="#">Дорого</a></li>
+											<li uk-filter-control="filter: [data-price='cheap']; group: price"><a href="#">Дешево</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="uk-width-1-4" id="filter">
+							<div class="uk-card uk-card-default uk-card-body uk-visible@m" uk-sticky="top: #my-id; offset: 110">
+								<span class="uk-nav-header">Цвет</span>
+								<ul class="uk-nav uk-nav-default">
+									<li uk-filter-control="filter: [data-color='red']; group: data-color"><a href="#">Красный</a></li>
+									<li uk-filter-control="filter: [data-color='green']; group: data-color"><a href="#">Зеленый</a></li>
+									<li uk-filter-control="filter: [data-color='blue']; group: data-color"><a href="#">Синий</a></li>
+								</ul>
+								<span class="uk-nav-header">Цена</span>
+								<ul class="uk-nav uk-nav-default">
+									<li uk-filter-control="filter: [data-price='expensive']; group: price"><a href="#">Дорого</a></li>
+									<li uk-filter-control="filter: [data-price='cheap']; group: price"><a href="#">Дешево</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="uk-width-3-4">
+							<ul class="js-filter uk-child-width-1-2@m" uk-grid>
+								<li data-color="blue" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-primary">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-primary">99 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="green" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-success">Stiebel Eltron SB-VTH 150</h3>
+											<p class="uk-text-truncate uk-text-success">20'' (50 см) Телевизор LED Panasonic 20S30HA102B черный</p>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-success">78 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="blue" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-primary">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-primary">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">96 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="green" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-success">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-success">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="green" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-success">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-success">96 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="blue" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-primary">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-primary">76 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">100 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="green" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-success">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-success">6 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">7 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="blue" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-primary">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-primary">86 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="red" data-price="expensive">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-danger">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-danger">96 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-color="blue" data-price="cheap">
+									<div class="uk-card uk-card-default">
+										<div class="uk-card-media-top">
+											<div class="uk-text-center">
+												<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+													<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img>
+													<div class="uk-position-center">
+														<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<h3 class="uk-card-title uk-text-primary">Stiebel Eltron SB-VTH 150</h3>
+											<div class="uk-child-width-auto uk-flex-middle" uk-grid>
+												<div>
+													<span class="uk-text-emphasis uk-text-bold uk-text-large uk-text-primary">1 999 р</span>
+												</div>
+											</div>
+										</div>
+										<div class="uk-card-footer">
+											<div class="uk-flex uk-flex-between">
+												<a class="uk-button uk-button-default" href="#">Подробнее</a>
+												<button class="uk-button uk-button-primary uk-text-right">
+													<span uk-icon="icon: cart;"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="uk-section uk-section-muted footer-wrapper">
+				<div class="uk-container">
+					<div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+						<div>
+							<ul class="uk-nav uk-nav-default footer-catalogue uk-margin-medium-left">
+								<li class="uk-nav-header uk-active"><a href="index.html"><img src="image/stiebel-eltron.svg" width="200" alt="Stiebel Eltron"></a></li>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span>+7 (495) 565-34-82</p>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span>+7 (800) 333-21-74</p>
+								<p><span uk-icon="mail" class="uk-margin-small-right"></span>info@stiebel-gmbh.ru</p>
+								<p><span uk-icon="youtube" class="uk-margin-small-right"></span>Наш канал на YouTube</p>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">Каталог</li>
+								<li><a href="#">Водонагреватели</a></li>
+								<li><a href="#">Конвекторы</a></li>
+								<li><a href="#">Сушилки</a></li>
+								<li><a href="#">Обогреватели</a></li>
+								<li><a href="#">Тепловентиляторы</a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">Информация</li>
+								<li><a href="#modal-center" uk-toggle>Рейтинг магазина</a></li>
+								<div id="modal-center" class="uk-flex-top" uk-modal>
+									<div class="uk-modal-dialog uk-modal-body uk-width-auto uk-margin-auto-vertical">
+										<button class="uk-modal-close-default" type="button" uk-close></button>
+										<img src="image/rating_5_3.png" alt="Рейтинг магазина" uk-img />
+									</div>
+								</div>
+
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">Сертификаты</a></li>
+								<li><a href="#">Условия возврата</a></li>
+								<li><a href="#">Политика конфиденциальности</a></li>
+
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue">
+								<li class="uk-nav-header uk-text-bold uk-margin-medium-bottom">О компании</li>
+								<li><a href="#">О бренде Stiebel Eltron</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости и статьи</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

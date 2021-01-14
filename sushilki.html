@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Сушилки - UiKit</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		
+		
+    </head>
+    <body>
+	<div class="uk-container">
+		<header>
+			<div class="uk-navbar-container tm-navbar-container navbar-wrapper" uk-sticky="cls-active: tm-navbar-container-fixed">
+                <div class="uk-container" uk-navbar>
+                    <div class="uk-navbar-left">
+					<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" uk-navbar-toggle-icon href="#"></a>
+					<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+								<div class="uk-offcanvas-bar">
+									
+									<button class="uk-offcanvas-close" type="button" uk-close></button>
+									<div class="uk-card uk-card-body uk-width-1-2@s">
+										<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+											<li class="uk-parent">
+												<a href="#">Каталог</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Водонагреватели</a></li>
+													<li><a href="#">Конвекторы</a></li>
+													<li><a href="#">Сушилки</a></li>
+													<li><a href="#">Обогреватели</a></li>
+													<li><a href="#">Тепловентиляторы</a></li>
+													<li><a href="#">Акции</a></li>
+													<li><a href="#">Не производится</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Оплата</a></li>
+											<li class="uk-parent">
+												<a href="#">Информация</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Для дилеров</a></li>
+													<li><a href="#">Монтаж</a></li>
+													<li><a href="#">Гарантия</a></li>
+													<li><a href="#">Сертификаты</a></li>
+													<li><a href="#">Условия возврата</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Условия возврата</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+					
+					
+					
+					<a class="uk-navbar-item uk-logo" href="index.html"><img src="image/logo.png" width="200" alt="Logo" uk-img></a>
+                        <nav class="uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="catalog.html">Каталог<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="subcategory.html">Водонагреватели</a></li>
+                                                            <li><a href="subcategory.html">Конвекторы</a></li>
+                                                            <li><a href="subcategory.html">Сушилки</a></li>
+                                                            <li><a href="subcategory.html">Обогреватели</a></li>
+                                                            <li><a href="subcategory.html">Тепловентиляторы</a></li>
+                                                            <li><a href="subcategory.html">Акции</a></li>
+                                                            <li><a href="subcategory.html">Не производится</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="dostavka.html">Доставка</a></li>
+                                <li><a href="oplata.html">Оплата</a></li>
+								
+								<li><a href="catalog.html">Информация<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="dealers.html">Для дилеров</a></li>
+                                                            <li><a href="montazh.html">Монтаж</a></li>
+                                                            <li><a href="garantia.html">Гарантия</a></li>
+                                                            <li><a href="subcategory.html">Сертификаты</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+								<li><a href="about.html">Видео</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="uk-navbar-right"><a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+                        <div class="uk-navbar-dropdown uk-padding-small uk-margin-remove" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                            <div class="uk-container">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1"><input class="uk-search-input" type="search" placeholder="Search…" autofocus></form>
+                                    </div>
+                                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close></a></div>
+                                </div>
+                            </div>
+                        </div>
+						<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="account.html" uk-icon="user"></a>
+                        <div class="uk-padding-small uk-margin-remove" uk-dropdown="pos: bottom-right; offset: -10; delay-hide: 200;" style="min-width: 150px;">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="account.html">Заказы
+                                        <span>(2)</span></a></li>
+                                <li><a href="favorites.html">Отложенные
+                                        <span>(3)</span></a></li>
+                                <li><a href="personal.html">Профиль</a></li>
+                                <li><a href="settings.html">Настройки</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </div><a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false"><span uk-icon="cart"></span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<main>
+		
+			<div class="uk-section">
+				<ul class="uk-breadcrumb">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="vodonagrevateli.html">Водонагреватели</a></li>
+					<li><a href="konvektory.html"><a>Конвекторы</a></li>
+					<li class="uk-disabled"><a>Сушилки</a></li>
+					<li><a href="obogrevateli.html">Обогреватели</a></li>
+					<li><a href="teploventilyatory.html">Тепловентиляторы</a></li>
+				</ul>
+			</div>
+			
+			<div class="uk-flex-middle" uk-grid>
+				<div class="uk-width-2-3@m">
+					<h3 class="uk-card-title uk-padding">Настенные</h3>
+					<p class="uk-text-justify uk-padding">Конвекторы данного типа предусматривают исключительно настенный монтаж. 
+					Нагревательным элементом в конструкции является ТЭН из нержавеющей стали, а тепло передается с помощью алюминиевого 
+					теплообменника. Встроенный термостат позволяет поддерживать заданную температуру. Так же есть системы защиты от 
+					перегрева и замерзания.</p>
+						<a class="uk-link-text uk-padding" href="#">Открыть</a>
+				</div>
+				<div class="uk-width-1-3@m uk-flex-first">
+					<img src="image/products/sb-vth.jpg" alt="Image" class="uk-padding-large">
+				</div>
+			</div>
+			<div class="uk-section">
+				<article class="uk-article uk-padding">
+					<h3 class="uk-article-title"><a class="uk-link-reset" href="">Преимущества сушилок для рук Stiebel Eltron</a></h3>
+					<p class="uk-text-justify">Сушилки для рук от всемирно известной группы компаний отличаются высокой надежностью и удобством 
+					эксплуатации. Они успешно используются для обустройства туалетных комнат баров, торговых и торгово-развлекательных центров, 
+					предприятий общественного питания, муниципальных и административных объектов. Благодаря чувствительным сенсорам электрические 
+					приборы Stiebel отличаются чёткостью включения и отключения, срабатывают на расстоянии до 13 сантиметров от рук. Купить электросушители
+					у официального дилера бренда в РФ вы можете не только по низкой цене, но и с возможностью доставки по всей стране и профессионального 
+					монтажа силами специалистов компании.</p>
+					<p class="uk-text-justify">Электрические сушители рук Stiebel выполнены в корпусе из стали, алюминия или ударопрочного пластика, 
+					отличаются высокой степенью защиты и электробезопасности. Потребителям предлагаются модели со следующими характеристиками:</p>
+					<ul class="uk-list">
+						<li>мощностью от 0,91 д 2,6 киловатт</li>
+						<li>с расходом воздуха от 146 до 250 м<sup>3</sup>/час</li>
+						<li>временем сушки 15, 25 и 40 секунд</li>
+						<li>с уровнем производимого при работе шума 54, 68 и 82 дБ.</li>
+					</ul>
+					<p class="uk-text-justify">Богатый ассортимент сушилок для рук позволяет без труда купить оптимально отвечающую условиям эксплуатации 
+					модель, руководствуясь интенсивностью использования, требованиям к внешнему виду и материалу изготовления корпуса. Продуманная система 
+					крепления приборов обеспечивает их устойчивую и надежную фиксацию на стене, вне зависимости от материала: гипсокартон, кирпич, бетон 
+					или дерево.</p>
+					<p class="uk-text-justify">Дилерский центр Штибель предлагает по низкой цене приобрести электросушилки с официальной гарантией изготовителя
+					и расширенной технической поддержкой. Для получения профессиональной консультации свяжитесь с представителями компании удобным для вас 
+					способом: по телефону или через форму обратной связи.</p>
+				</article>	
+			</div>	
+
+
+
+
+		</main>
+		<footer>
+			<div class="uk-section uk-section-muted footer-wrapper">
+				<div class="uk-container">
+
+					<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+						<div>
+							<div class="uk-card uk-card-body uk-width-1-2@s">
+								<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+									<li class="uk-parent">
+										<a href="#">Каталог</a>
+										<ul class="uk-nav-sub">
+											<li><a href="#">Водонагреватели</a></li>
+											<li><a href="#">Конвекторы</a></li>
+											<li><a href="#">Сушилки</a></li>
+											<li><a href="#">Обогреватели</a></li>
+											<li><a href="#">Тепловентиляторы</a></li>
+											<li><a href="#">Акции</a></li>
+											<li><a href="#">Не производится</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Оплата</a></li>
+									<li class="uk-parent">
+										<a href="#">Информация</a>
+										<ul class="uk-nav-sub">
+											<li><a href="#">Для дилеров</a></li>
+											<li><a href="#">Монтаж</a></li>
+											<li><a href="#">Гарантия</a></li>
+											<li><a href="#">Сертификаты</a></li>
+											<li><a href="#">Условия возврата</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Видео</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Условия возврата</a></li>
+									
+								</ul>
+							</div>
+						</div>
+						<div>
+							<a class="uk-button uk-button-default uk-margin-xlarge" href="#modal-center" uk-toggle>Рейтинг магазина</a>
+
+								<div id="modal-center" class="uk-flex-top" uk-modal>
+									<div class="uk-modal-dialog uk-modal-body uk-width-auto uk-margin-auto-vertical">
+
+										<button class="uk-modal-close-default" type="button" uk-close></button>
+
+										<img src="image/rating_5_3.png" alt="Рейтинг магазина" uk-img/>
+									</div>
+								</div>
+						</div>
+						<div>
+							<ul uk-accordion="collapsible: false" class="uk-margin-right">
+								<li>
+									<a class="uk-accordion-title" href="#">Москва</a>
+									<div class="uk-accordion-content">
+										<p>+7 (495) 565-34-82</p>
+										<p>Каширский проезд д. 17, стр. 5</p>
+									</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#">Санкт-Петербург</a>
+									<div class="uk-accordion-content">
+										<p>+7 (812) 245-69-76</p>
+										<p>ул. Савушкина д. 17</p>
+									</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#">Екатеринбург</a>
+									<div class="uk-accordion-content">
+										<p>8 800 333-21-74 (доб. 96)</p>
+										<p>ул. Полевая, д. 78</p>
+									</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#">Новосибирск</a>
+									<div class="uk-accordion-content">
+										<p>8 800 333-21-74 (доб. 154)</p>
+										<p>ул. Большая, д. 256 А</p>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Главная - UiKit</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		
+		
+    </head>
+    <body>
+	<div class="uk-container">
+		<header>
+			<div class="uk-navbar-container tm-navbar-container navbar-wrapper" uk-sticky="cls-active: tm-navbar-container-fixed">
+                <div class="uk-container" uk-navbar>
+                    <div class="uk-navbar-left uk-margin-small-left">
+					<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" uk-navbar-toggle-icon href="#"></a>
+					<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+								<div class="uk-offcanvas-bar">
+									
+									<button class="uk-offcanvas-close" type="button" uk-close></button>
+									<div class="uk-card uk-card-body uk-width-1-2@s">
+										<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+											<li class="uk-parent">
+												<a href="#">Каталог</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Водонагреватели</a></li>
+													<li><a href="#">Конвекторы</a></li>
+													<li><a href="#">Сушилки</a></li>
+													<li><a href="#">Обогреватели</a></li>
+													<li><a href="#">Тепловентиляторы</a></li>
+													<li><a href="#">Акции</a></li>
+													<li><a href="#">Не производится</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Оплата</a></li>
+											<li class="uk-parent">
+												<a href="#">Информация</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Для дилеров</a></li>
+													<li><a href="#">Монтаж</a></li>
+													<li><a href="#">Гарантия</a></li>
+													<li><a href="#">Сертификаты</a></li>
+													<li><a href="#">Условия возврата</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Условия возврата</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+					
+					
+					
+					<a class="uk-navbar-item uk-logo" href="index.html"><img src="image/stiebel-eltron.svg" width="150" alt="Logo" uk-img></a>
+                        <nav class="uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <!-- <li><a href="catalog.html">Каталог<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="subcategory.html">Водонагреватели</a></li>
+                                                            <li><a href="subcategory.html">Конвекторы</a></li>
+                                                            <li><a href="subcategory.html">Сушилки</a></li>
+                                                            <li><a href="subcategory.html">Обогреватели</a></li>
+                                                            <li><a href="subcategory.html">Тепловентиляторы</a></li>
+                                                            <li><a href="subcategory.html">Акции</a></li>
+                                                            <li><a href="subcategory.html">Не производится</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <li><a href="dostavka.html">Доставка</a></li>
+                                <li><a href="oplata.html">Оплата</a></li>
+								
+								<li><a href="catalog.html">Информация<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="dealers.html">Для дилеров</a></li>
+                                                            <li><a href="montazh.html">Монтаж</a></li>
+                                                            <li><a href="garantia.html">Гарантия</a></li>
+                                                            <li><a href="subcategory.html">Сертификаты</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+								<li><a href="about.html">Видео</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="uk-navbar-right uk-margin-small-right">
+					<a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+                        <div class="uk-navbar-dropdown uk-padding-small" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                            <div class="uk-container">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1"><input class="uk-search-input" type="search" placeholder="Найти…" autofocus></form>
+                                    </div>
+                                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close></a></div>
+                                </div>
+                            </div>
+                        </div>
+						<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false">
+						<span uk-icon="cart"></span></a>
+						<div id="cart-offcanvas" uk-offcanvas="flip: true; overlay: true">
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+								<h3>Ваша корзина</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+			<nav class="uk-navbar-container uk-visible@m uk-padding uk-background-default" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+							<li><a href="#">Водонагреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                            <li><a href="#">Сушилки</a></li>
+                            <li><a href="#">Обогреватели</a></li>
+                            <li><a href="#">Тепловентиляторы</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Не производится</a></li>
+						</ul>
+					</div>
+			</nav>
+		</header>
+		<main>
+			<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true" tabindex="-1" uk-slider>
+				<ul class="uk-slider-items uk-grid">
+					<li class="uk-width-1">
+						<div class="uk-panel">
+							<img class="uk-animation-kenburns" src="image/slider_banner/1.jpg" alt="">
+							<div class="uk-position-center uk-text-center">
+								<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+								<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+								<a class="uk-button banner-link-to" href="#">Link</a>
+							</div>
+						</div>
+					</li>
+					<li class="uk-width-1">
+						<div class="uk-panel">
+							<img class="uk-animation-kenburns" src="image/slider_banner/2.jpg" alt="">
+							<div class="uk-position-center uk-text-center">
+								<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+								<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+								<a class="uk-button banner-link-to" href="#">Link</a>
+							</div>
+						</div>
+					</li>
+					<li class="uk-width-1">
+						<div class="uk-panel">
+							<img class="uk-animation-kenburns" src="image/slider_banner/3.jpg" alt="">
+							<div class="uk-position-center uk-text-center">
+								<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+								<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+								<a class="uk-button banner-link-to" href="#">Link</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+
+			</div>
+			
+			
+			<h2 class="uk-text-center">Наши преимущества</h2>		
+			
+			<div class="uk-child-width-1-5@m uk-grid-match uk-margin-medium" uk-grid>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img data-src="image/icons/man-in-suit-and-tie.png" class="uk-padding-large uk-align-center uk-padding-remove-bottom" width="250" height="250" alt="Официальный дилер" uk-img>
+					</div>
+					<div class="uk-card-body">
+						<h5 class="uk-card-title uk-text-center">Официальный дилер</h5>
+						<p class="uk-text-center uk-text-small">ООО «ИНСИСТЕМ» имеет статус официального дилера ООО "Штибель Эльтрон" (Россия)</p>
+					</div>
+				</div>
+		</div>
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<img data-src="image/icons/buildings.png" class="uk-padding-large uk-align-center uk-padding-remove-bottom" width="250" height="250" alt="Несколько филиалов" uk-img>
+				</div>
+				<div class="uk-card-body">
+					<h5 class="uk-card-title uk-text-center">Несколько филиалов</h5>
+					<p class="uk-text-center uk-text-small">Фирменные магазины в крупнейших городах России: Москва, Санкт-Петербург, Екатеринбург, Новосибирск</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<img data-src="image/icons/shopping-cart.png" class="uk-padding-large uk-align-center uk-padding-remove-bottom" width="250" height="250" alt="Заказы онлайн" uk-img>
+				</div>
+				<div class="uk-card-body">
+					<h5 class="uk-card-title uk-text-center">Заказы онлайн</h5>
+					<p class="uk-text-center uk-text-small">Интернет-магазин Stiebel-GMBH.ru - это удобная система заказов и доставки в любой регион России.</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<img data-src="image/icons/credit-card.png" class="uk-padding-large uk-align-center uk-padding-remove-bottom" width="250" height="250" alt="Удобная оплата" uk-img>
+				</div>
+				<div class="uk-card-body">
+					<h5 class="uk-card-title uk-text-center">Удобная оплата</h5>
+					<p class="uk-text-center uk-text-small">Оплата банковскими картами Visa, MasterCard, Maestro. Без дополнительных комиссий</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<img data-src="image/icons/guarantee.png" class="uk-padding-large uk-align-center uk-padding-remove-bottom" width="250" height="250" alt="Официальная гарантия" uk-img>
+				</div>
+				<div class="uk-card-body">
+					<h5 class="uk-card-title uk-text-center">Официальная гарантия</h5>
+					<p class="uk-text-center uk-text-small">Основная и расширенная (на 3 года) официальная гарантия. В авторизированном сервисном центре</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="uk-section">
+		<h2 class="uk-text-center">Популярные товары</h2>
+			<div uk-grid class="uk-grid uk-child-width-1-3@m uk-grid-match">
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<div class="uk-text-center">
+								<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+									<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/stiebel-eltron-cns-s-50_75_100_125_150_175_200_250_300_307.500x600_4.500x500.jpg" data-width="500" data-height="500" alt="UIkit cards" uk-img="">
+									<div class="uk-position-center">
+										<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-badge uk-label">Хит продаж</div>
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Stiebel Eltron CNS 150S</h3>
+							<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+								<div>
+									<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<div class="uk-text-center">
+								<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+									<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/ddh.500x500.jpg" data-width="500" data-height="500" alt="UIkit cards" uk-img="">
+									<div class="uk-position-center">
+										<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-badge uk-label uk-label-success">Хит продаж</div>
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Stiebel Eltron DDH8</h3>
+							<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+								<div>
+									<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<div class="uk-text-center">
+								<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+									<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/ddh.500x500.jpg" data-width="500" data-height="500" alt="UIkit cards" uk-img="">
+									<div class="uk-position-center">
+										<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-badge uk-label uk-label-danger">Хит продаж</div>
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Stiebel Eltron DDH6</h3>
+								<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+								<div>
+									<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Секция новинок -->
+	
+	
+	
+	<h2 class="uk-text-center">Новинки</h2>
+	<div uk-grid class="uk-grid uk-child-width-1-3@m uk-grid-match">
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<div class="uk-text-center">
+						<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+							<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/cns_50_trend_1.500x500.jpg" data-width="500" data-height="500" alt="UIkit cards" uk-img="">
+							<div class="uk-position-center">
+								<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="uk-card-badge uk-label">Новинка</div>
+				</div>
+				<div class="uk-card-body">
+					<h3 class="uk-card-title">Stiebel Eltron CNS 50 Trend</h3>
+					<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+						<div>
+							<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<div class="uk-text-center">
+						<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+							<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/sb-vth.jpg" data-width="500" data-height="500" alt="UIkit cards" uk-img="">
+							<div class="uk-position-center">
+								<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="uk-card-badge uk-label uk-label-success">Новинка</div>
+				</div>
+				<div class="uk-card-body">
+					<h3 class="uk-card-title">Stiebel Eltron SB-VTH 100</h3>
+					<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+						<div>
+							<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="uk-card uk-card-default">
+				<div class="uk-card-media-top">
+					<div class="uk-text-center">
+						<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+							<img class="uk-transition-scale-up uk-transition-opaque uk-padding-large" data-src="image/products/psh-we-h.jpg" data-width="1000" data-height="667" alt="UIkit cards" uk-img="">
+							<div class="uk-position-center">
+								<span class="uk-transition-fade" data-uk-icon="icon: plus; ratio: 2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="uk-card-badge uk-label uk-label-danger">Новинка</div>
+				</div>
+				<div class="uk-card-body">
+					<h3 class="uk-card-title">Stiebel Eltron PSH 80 WE-H</h3>
+					<div class="uk-child-width-auto uk-flex-middle" data-uk-grid="">
+						<div>
+							<span class="uk-text-emphasis uk-text-bold uk-text-large">6 999 р</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Секция новинок (The End) -->
+	<h2 class="uk-text-center">Новости и статьи</h2>
+		<div class="uk-child-width-expand@s" uk-grid>
+			<div>
+				<div class="uk-padding">
+					<h3 class="uk-margin-large-bottom">Новость 1</h3>
+					<p class="uk-text-middle uk-margin-large-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div>
+						<a class="uk-button link-to" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="uk-child-width-expand@s" uk-grid>
+			<div>
+				<div class="uk-padding">
+					<h3 class="uk-margin-large-bottom">Новость 2</h3>
+					<p class="uk-text-middle uk-margin-large-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div>
+						<a class="uk-button link-to" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="uk-child-width-expand@s" uk-grid>
+			<div>
+				<div class="uk-padding">
+					<h3 class="uk-margin-large-bottom">Новость 3</h3>
+					<p class="uk-text-middle uk-margin-large-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div>
+						<a class="uk-button link-to" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+		
+	
+		<article class="uk-article uk-padding">
+			<h3 class="uk-article-title"><a class="uk-link-reset" href="">О Stiebel-Hmbh</a></h3>
+			<p class="uk-text-justify">Бренд Stiebel Eltron вот уже несколько десятилетий является воплощением немецкого качества, надежности и технологий. 
+			Технологические решения, выработанные на основе многолетнего опыта, многоступенчатый контроль качества, инновационное производство, 
+			все это позволило стать компании Stiebel признанным лидером среди оборудования которое отвечает за комфорт человека.</p>
+			<p class="uk-text-justify">Компания STIEBEL-GMBH является официальным дилером ООО «Штибель Эльтрон» - официального представительства STIEBEL ELTRON INTERNATIONAL 
+			в России. Наш коллектив надеется, что сайт поможет вам сориентироваться в продукции Stiebel  Eltron, сделать правильный выбор, комфортно, 
+			в минимальные сроки совершить покупку и в итоге насладиться всеми преимуществами продукции Stiebel Eltron.</p>
+			<p class="uk-text-justify">Свяжитесь с нами любым доступным способом, и наши специалисты с радостью ответят на любые ваши вопросы.</p>
+		</article>	
+			
+		</main>
+		<footer>
+			<div class="uk-section uk-section-muted footer-wrapper">
+				<div class="uk-container">
+					<div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+						<div>
+							<ul class="uk-nav uk-nav-default footer-catalogue uk-margin-medium-left uk-text-center uk-text-left@m">
+								<li class="uk-nav-header uk-active"><a href="index.html"><img src="image/stiebel-eltron.svg" width="200" alt="Stiebel Eltron"></a></li>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:+74955653482">+7 495 565 34 82</a></p>
+								<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:++78003332174">+7 (800) 333 21 74</a></p>
+								<p><span uk-icon="mail" class="uk-margin-small-right"></span><a href="mailto:info@stiebel-gmbh.ru">info@stiebel-gmbh.ru</a></p>
+								<p><span uk-icon="youtube" class="uk-margin-small-right"></span>Наш канал на YouTube</p>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">
+								<li class="uk-nav-header uk-text-bold uk-margin-small-bottom">Каталог</li>
+								<li><a href="#">Водонагреватели</a></li>
+								<li><a href="#">Конвекторы</a></li>
+								<li><a href="#">Сушилки</a></li>
+								<li><a href="#">Обогреватели</a></li>
+								<li><a href="#">Тепловентиляторы</a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">						
+								<li class="uk-nav-header uk-text-bold uk-margin-small-bottom">Информация</li>
+							    <li><a  href="#modal-center" uk-toggle>Рейтинг магазина</a></li>
+									<div id="modal-center" class="uk-flex-top" uk-modal>
+									<div class="uk-modal-dialog uk-modal-body uk-width-auto uk-margin-auto-vertical">
+										<button class="uk-modal-close-default" type="button" uk-close></button>
+										<img src="image/rating_5_3.png" alt="Рейтинг магазина" uk-img/>
+									</div>
+									</div>
+										
+								<li><a href="#">Гарантия</a></li>	
+								<li><a href="#">Сертификаты</a></li>	
+								<li><a href="#">Условия возврата</a></li>	
+								<li><a href="#">Политика конфиденциальности</a></li>	
+							
+							</ul>	
+						</div>
+						<div>
+							<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">
+								<li class="uk-nav-header uk-text-bold uk-margin-small-bottom">О компании</li>
+								<li><a href="#">О бренде Stiebel Eltron</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости и статьи</a></li>
+								
+							</ul>	
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
