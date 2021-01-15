@@ -55,8 +55,14 @@ footer {
 }
 
 .footer-catalogue .uk-nav-header {
-	color: #FF2A0C;
+	color:#E30000;
+	font-weight: 600;
 }
+
+.footer-catalogue .logo-bottom {
+	font-weight: 600;
+}
+
 
 .footer-catalogue p a, .footer-catalogue li a, .footer-nav .uk-nav-sub li a {
 	color: #fff;
