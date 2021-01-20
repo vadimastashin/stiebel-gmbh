@@ -41,6 +41,32 @@ header {
 	background: #DFDFDF;
 }
 
+h3.garanty {
+	color: #94151E;
+	font-weight: 700;	
+}
+
+.registration {
+	background-color: #94151E;
+	padding: 10px 10px;
+	margin: 60px 40px;
+	border-radius: 5px;
+}
+
+.registration a {
+	color: #fff;
+}
+
+.registration:hover {
+	background-color: #fff;
+	border: #94151E;
+	color: #94151E;
+}
+
+.registration h2 a:hover {
+	color:#94151E;
+	font-weight: 700;
+}
 
 footer {
 	width: 100%;
