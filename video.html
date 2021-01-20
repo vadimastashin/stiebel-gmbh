@@ -159,39 +159,64 @@
             <div class="uk-section">
 				<ul class="uk-breadcrumb uk-margin-left">
 					<li><a href="index.html">Главная</a></li>
-					<li class="uk-disabled"><a>Видео</a></li>
+					<li class="uk-disabled"><a class="uk-text-danger uk-text-bold">Видео</a></li>
 				</ul>
             </div>
-            <div class="uk-section">
-                <form class="uk-form-horizontal uk-margin">
-                    <div uk-grid>
-                        <div class="uk-width-1-2@m">
-                            <label class="uk-form-label" for="form-horizontal-select">Выбрать товар</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="form-horizontal-select">
-                                            <option>Товар 1</option>
-                                            <option>Товар 02</option>
-                                        </select>
-                                    </div>
-                        </div>            
-                        <div class="uk-width-1-2@m">
-                            <button class="uk-button uk-button-default">Очистить</button>
-                        </div>
+            <div class="uk-section uk-align-center">
+                <form class="uk-child-width-expand@s uk-text-center" uk-grid>
+					<div class="uk-width-1-3@m">
+						<label class="uk-form-label uk-margin-auto uk-text-center uk-text-bold uk-text-uppercase" for="form-horizontal-select">Выбрать товар</label>
+					</div>
+					<div class="uk-width-1-3@m">		
+                    	<div class="uk-form-controls">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Товар 1</option>
+                                <option>Товар 02</option>
+                            </select>
+						</div>
+					</div>            
+                    <div class="uk-width-1-3@m">
+                        <button class="uk-button uk-button-default">Очистить</button>
                     </div>
                 </form>    
             </div>    
 
             <div class="uk-section uk-section-default">
-                <div uk-grid>
+                <div uk-grid class="uk-child-width-expand@s">
                     <div class="uk-width-1-2@m">
                         <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
                     </div>
                     <div class="uk-width-1-2@m">
-                        <h3>Видео 1</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque veniam maiores, 
+                        <h3 class="uk-text-center">Видео 1</h3>
+                        <p class="uk-margin-right uk-text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque veniam maiores, 
                             consequuntur asperiores ducimus tempora fugiat et excepturi temporibus amet impedit
                              optio atque, voluptates a hic? Cumque, beatae eum.</p>
-                    </div>>        
+					</div>
+				</div> 
+				<div uk-grid>
+                    <div class="uk-width-1-2@m">
+                        <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <h3 class="uk-text-center">Видео 2</h3>
+                        <p class="uk-margin-right uk-text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque veniam maiores, 
+                            consequuntur asperiores ducimus tempora fugiat et excepturi temporibus amet impedit
+                             optio atque, voluptates a hic? Cumque, beatae eum.</p>
+					</div>
+				</div> 
+			</div>
+			<div class="uk-section uk-section-default">
+				<ul class="uk-pagination uk-flex-center" uk-margin>
+					<li><a href="#"><span uk-pagination-previous></span></a></li>
+					<li><a href="#">1</a></li>
+					<li class="uk-disabled"><span>...</span></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li class="uk-active"><span>7</span></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#"><span uk-pagination-next></span></a></li>
+				</ul>  
+			</div>   
         </main>
         <footer>
 			<div class="uk-section uk-section-muted footer-wrapper">
