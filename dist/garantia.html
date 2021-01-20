@@ -1,19 +1,166 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Гарантия</title>
+        <title>Гарантия - UiKit</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.8/css/uikit-core-rtl.min.css">
-		<link rel="stylesheet" href="css/pages.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		
 		
     </head>
     <body>
+	<div class="uk-container">
+		<header>
+			<div class="uk-navbar-container tm-navbar-container navbar-wrapper" uk-sticky="cls-active: tm-navbar-container-fixed">
+                <div class="uk-container" uk-navbar>
+                    <div class="uk-navbar-left uk-margin-small-left">
+					<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" uk-navbar-toggle-icon href="#"></a>
+					<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+								<div class="uk-offcanvas-bar">
+									
+									<button class="uk-offcanvas-close" type="button" uk-close></button>
+									<div class="uk-card uk-card-body uk-width-1-2@s">
+										<ul class="uk-nav-default uk-nav-parent-icon footer-nav" uk-nav>
+											<li class="uk-parent">
+												<a href="#">Каталог</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Водонагреватели</a></li>
+													<li><a href="#">Конвекторы</a></li>
+													<li><a href="#">Сушилки</a></li>
+													<li><a href="#">Обогреватели</a></li>
+													<li><a href="#">Тепловентиляторы</a></li>
+													<li><a href="#">Акции</a></li>
+													<li><a href="#">Не производится</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Оплата</a></li>
+											<li class="uk-parent">
+												<a href="#">Информация</a>
+												<ul class="uk-nav-sub">
+													<li><a href="#">Для дилеров</a></li>
+													<li><a href="#">Монтаж</a></li>
+													<li><a href="#">Гарантия</a></li>
+													<li><a href="#">Сертификаты</a></li>
+													<li><a href="#">Условия возврата</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Условия возврата</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+					
+					
+							
+								<a class="uk-navbar-item uk-logo" href="index.html"><div><img src="image/stiebel-eltron.svg" width="250" alt="Logo" uk-img>
+									<div class="uk-navbar-subtitle uk-text-normal"><span class="uk-text-danger">stiebel-gmbh.ru</span> - <span class="uk-text-secondary">официальный дилер</span></div>
+								</div></a>
+					<nav class="uk-visible@m">
+                            <ul class="uk-navbar-nav uk-text-secondary">
+                                <!-- <li><a href="catalog.html">Каталог<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="subcategory.html">Водонагреватели</a></li>
+                                                            <li><a href="subcategory.html">Конвекторы</a></li>
+                                                            <li><a href="subcategory.html">Сушилки</a></li>
+                                                            <li><a href="subcategory.html">Обогреватели</a></li>
+                                                            <li><a href="subcategory.html">Тепловентиляторы</a></li>
+                                                            <li><a href="subcategory.html">Акции</a></li>
+                                                            <li><a href="subcategory.html">Не производится</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <li><a href="dostavka.html">Доставка</a></li>
+                                <li><a href="oplata.html">Оплата</a></li>
+								
+								<li><a href="catalog.html">Информация<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                        <div class="uk-container">
+                                            <ul class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                                <li>
+                                                    <div class="uk-margin-top uk-margin-bottom">
+                                                        <ul class="uk-nav uk-nav-default">
+                                                            <li><a href="dealers.html">Для дилеров</a></li>
+                                                            <li><a href="montazh.html">Монтаж</a></li>
+                                                            <li><a href="garantia.html">Гарантия</a></li>
+                                                            <li><a href="subcategory.html">Сертификаты</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+								<li><a href="about.html">Видео</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="uk-navbar-right uk-margin-small-right">
+					<a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+                        <div class="uk-navbar-dropdown uk-padding-small" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                            <div class="uk-container">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1"><input class="uk-search-input" type="search" placeholder="Найти…" autofocus></form>
+                                    </div>
+                                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close></a></div>
+                                </div>
+                            </div>
+                        </div>
+						<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false">
+						<span uk-icon="cart"></span></a>
+						<div id="cart-offcanvas" uk-offcanvas="flip: true; overlay: true">
+							<div class="uk-offcanvas-bar">
+
+								<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+								<h3>Ваша корзина</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+			<nav class="uk-navbar-container uk-visible@m uk-padding uk-background-default" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+							<li><a href="#">Водонагреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                            <li><a href="#">Сушилки</a></li>
+                            <li><a href="#">Обогреватели</a></li>
+                            <li><a href="#">Тепловентиляторы</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Не производится</a></li>
+						</ul>
+					</div>
+			</nav>
+		</header>
+		<main>
 	<div class="uk-section">
 		<div class="uk-container">
 			<ul class="uk-breadcrumb">
 				<li><a href="#">Главная</a></li>
-				<li><span>Гарантия</span></li>
+				<li class="uk-disabled"><a class="uk-text-danger uk-text-bold">Гарантия</a></li>
 			</ul>
 		</div>	
 	</div>
@@ -21,15 +168,16 @@
 	
 	<div class="uk-section">
 		<div class="uk-container">
+			<h3 class="uk-text-center">Условия гарантии</h3>
 			<div class="uk-column-1-1">
-			<h3>Гарантия</h3>
-			<p>Условия обмена и возврата приобретенных в нашем магазине товаров полностью соответствуют 
+			<p class="uk-text-center uk-margin">Условия обмена и возврата приобретенных в нашем магазине товаров полностью соответствуют 
 			ФЗ РФ "О защите прав потребителей".</p>
 			</div>
+			<h3 class="uk-card-title uk-text-center uk-margin-large-top">Электронная регистрация гарантии</h3>
 			<div class="uk-flex-middle" uk-grid>
 				<div class="uk-width-2-3@m">
-					<h3 class="uk-card-title">Электронная регистрация гарантии</h3>
-					<p>Наша компания поставляет официальное оборудование с гарантийными обязательствами производителя по его обслуживанию 
+					
+					<p class="uk-text-justify uk-margin-larg-left">Наша компания поставляет официальное оборудование с гарантийными обязательствами производителя по его обслуживанию 
 						и ремонту. Каждая единица отгружаемой продукции снабжена гарантийным талоном либо талоном для электорнной регистрации, 
 						предоставляющими право на бесплатное обслуживание в официальных сервисных центрах в течение гарантийного периода. 
 						Система электронной онлайн-регистрации гарантии вводится на новую продукцию STIEBEL ELTRON с 3 февраля 2020 года. 
@@ -37,51 +185,206 @@
 						на страницу регистрации гарантии онлайн.</p>
 				</div>
 				<div class="uk-width-1-3@m uk-flex-first">
-					<img src="img/shtrih-kod-garantii_1.jpg" alt="Электронная регистрация гарантии">
+					<img class="uk-align-center" src="image/shtrih-kod-garantii_1.jpg" alt="Электронная регистрация гарантии">
 				</div>
 			</div>
 
-
-			
-			<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="img/shtrih-kod-garantii_1.jpg" alt="Электронная регистрация гарантии" uk-cover>
-					<canvas width="200"></canvas>
-				</div>
-				<div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Электронная регистрация гарантии</h3>
-						<p>Наша компания поставляет официальное оборудование с гарантийными обязательствами производителя по его обслуживанию 
-						и ремонту. Каждая единица отгружаемой продукции снабжена гарантийным талоном либо талоном для электорнной регистрации, 
-						предоставляющими право на бесплатное обслуживание в официальных сервисных центрах в течение гарантийного периода. 
-						Система электронной онлайн-регистрации гарантии вводится на новую продукцию STIEBEL ELTRON с 3 февраля 2020 года. 
-						На талоне для электронной регистрации гарантии и на наклейке на упаковке прибора будет находится QR-код, направляющий 
-						на страницу регистрации гарантии онлайн.</p>
-					</div>
-				</div>
-			</div>
 			<div class="uk-column-1-1">
-				<p>Со временем система электронной регистрации гарантии заменит традиционные бумажные гарантийные талоны, однако, вне зависимости от того, 
+				<p class="uk-text-justify uk-margin">Со временем система электронной регистрации гарантии заменит традиционные бумажные гарантийные талоны, однако, вне зависимости от того, 
 				когда Вы приобрели изделие STIEBEL ELTRON - до 03.02.2020г. или после - если у Вас на руках есть правильно заполненный традиционный 
 				"бумажный" гарантийный талон, Вы имеете полные права потребителя на гарантийное обслуживание этого прибора.</p>
 				<p>Предоставляется постгарантийное облуживание, которое подразумевает ремонт оборудования и проведение необходимых сервисных работ.</p>
 			</div>
 			<div class="uk-column-1-1">
-				<h3>Срок действия гарантии на продукцию</h3>
-				<div class="uk-overflow-auto">
-					<table class="uk-table">
-						<thead>
-						<tr><th>Тип оборудования</th>
-						<th>Stiebel Eltron</th>
-						<th>AEG</th></tr>
-						</thead>
-					</table>
-				</div>
+				<h3 class="uk-text-center">Изготовитель устанавливает следующие гарантийные сроки:</h3>
+                <table class="uk-table uk-table-responsive uk-table-middle uk-table-divider">
+                    <tr>
+                        <td colspan="2">
+                            <strong>Накопительные водонагреватели</strong>
+                            <span style="font-size:10px">PSH…Universal EL, PSH…Classic, SH…A, SH…S, SHZ…LCD, ESH…Plus, HFA…, SHW…ACE, SHW…S, SHO…AC, SB…S, SB…AC, SHU…</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>— водосодержащая ёмкость</td>
+                        <td>5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>— элементы электрической части</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong>Водонагреватели косвенного нагрева</strong>
+                            <span style="font-size:10px">PSH…WE, SB-VTI…, SB-VTH…</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>— водосодержащая ёмкость</td>
+                        <td>5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>— элементы электрической части</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Буферные и проточные накопители</strong>
+                            <span style="font-size:10px">SBS…W, SBS…WSOL, SBP…, SBPE…, SBP…E, SBP…ESOL</span>
+                        </td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>Проточные водонагреватели</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>Электрические конвекторы</td>
+                        <td>10 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Тепловентиляторы</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>Сушилки для рук Ultronic</td>
+                        <td>5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Сушилки для рук</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>Нагревательные фланцы FCR и BGC</td>
+                        <td>2 года</td>
+                    </tr>
+                    <tr>
+                        <td>Группы безопасности и гидравлические компоненты</td>
+                        <td>1 год</td>
+                    </tr>
+                </table>
+
 			</div>
+			<div class="uk-section">
+				<p>Срок службы оборудования STIEBEL ELTRON при соблюдении правил эксплуатации и применения ее по 
+				назначению составляет 10 (десять) лет. Внимательно ознакомьтесь с гарантийным талоном и 
+				проследите, что бы он был правильно заполнен. Гарантийный талон действителен только в оригинале 
+				с отметкой о модели, дате и месте продажи, с подписью продавца и штампом торгующей организации. 
+				При отсутствии в гарантийном и отрывном талонах даты продажи (либо кассового чека с датой продажи) 
+				– гарантийный срок исчисляется с даты выпуска изделия предприятием-изготовителем, либо в 
+				соответствии с иными установленными законом доказательствами даты начала исчисления гарантийного 
+				срока.</p>
+
+Сохраняйте гарантийный талон, чек на проданное изделие и квитанцию на услуги по его установке (доставке), доработке водяных и электрических внутриквартирных коммуникаций, а также любые другие документы, относящиеся к гарантийному или техническому обслуживанию изделия.
+
+Прежде чем вызвать специалиста из авторизованного сервисного центра Stiebel Eltron, внимательно прочитайте инструкцию по эксплуатации изделия. Если изделие исправно, то за сервисным центром Stiebel Eltron остается право требовать от Потребителя оплаты ложного вызова.
+
+Любые претензии по качеству изделия рассматриваются только после предварительной проверки качества изделия представителем авторизованного сервисного центра Stiebel Eltron.
+
+При вводе в эксплуатацию оборудования авторизованными сервисными службами должны быть оформлены соответствующие документы о вводе в эксплуатацию и сделана отметка в гарантийном талоне. Гарантийные обязательства распространяются только на изделия и материалы, установленные и эксплуатируемые в соответствии с требованиями «Инструкции по монтажу и эксплуатации».
+
+ВАЖНО! Для сохранения гарантии на водосодержащую емкость (бак) и обеспечения длительного срока службы водонагревателя необходимо проводить регулярную (не реже одного раза в два года) проверку состояния магниевого анода, установленного в водонагревателе и водосодержащей емкости, и, в случае необходимости, произвести замену анода и чистку водосодержащей емкости. В регионах с особо агрессивной водой может потребоваться более частая замена магниевого анода.
+
+Изготовитель не несет какой-либо ответственности за любой возможный ущерб, нанесенный потребителю, в случае не соблюдения последним требований Изготовителя, указанных в данных гарантийных обязательствах и инструкции по эксплуатации.
+
+Гарантия не распространяется на изделия, недостатки, в которых возникли вследствие:
+воздействия огня, аварии, стихийных бедствий или событий, приравниваемых к таковым;
+неквалифицированного монтажа или небрежного отношения;
+вскрытия и ремонта не уполномоченными на это организациями или лицами;
+самостоятельного внесения изменений в конструкцию изделия;
+самостоятельного демонтажа накопительного водонагревателя с места установки. Осмотр, проверка качества и экспертиза вышедшего из строя водонагревателя производится авторизованными сервисным центром производителя только по месту установки прибора;
+замерзания или всего лишь однократного превышения максимально допустимого давления, указанного на заводской табличке с характеристиками прибора;
+подключения к несоответствующим сетям газо-, электро- и водоснабжения или сетям с несоответствующими параметрами Государственным техническим стандартам и нормам;
+эксплуатации без защитных устройств или эксплуатации с устройствами с несоответствующими техническим характеристикам оборудования или не рекомендованными производителем;
+отсутствия заземления;
+использования коррозийно-активной воды;
+коррозии от электрохимических реакций;
+повреждения посторонними частицами;
+повреждения тэна или нагревательных спиралей от попадания воздуха внутрь колбы;
+образования на нагревательных элементах избыточного слоя накипи (при повышенной жесткости воды необходима обработка соответствующими составами);
+дефектов систем, с которыми эксплуатировалось изделие;
+отсутствия магниевого анода, установленного в месте, предусмотренном производителем;
+магниевый анод не был заменён в период, первышающий 24 месяца;
+отсутствия документов, подтверждающих ввод изделия в эксплуатацию;
+отсутствия отметки в гарантийном талоне или квитанции от авторизованного сервисного центра о прохождении сервисного обслуживания.
+Изготовитель не принимает претензии в следующих случаях:
+не соблюдения правил установки;
+отсутствия оригинального гарантийного талона;
+при отсутствии в гарантийном талоне следующих сведений: модели и серийного номера изделия, даты продажи, штампа торгующей организации, подписи продавца;
+внесения любых исправлений (изменений) в текст гарантийного документа.
+Установка, подключение и ремонт оборудования STIEBEL ELTRON
+Для монтажа и ввода в эксплуатацию оборудования мы рекомендуем Вам обратиться в авторизованный сервисный центр* или к квалифицированным специалистам. Убедительно просим Вас руководствоваться требованиями «Инструкции по монтажу и эксплуатации».
+
+Оплата работ по установке и подключению изделия происходит по прейскуранту сервисного центра. Условия оплаты работ по установке и подключению регулируются действующим законодательством. Изготовитель не несет какой-либо ответственности за любой ущерб, нанесенный имуществу граждан вследствие установки и подключения, не соответствующих требованиям, указанным в инструкции по эксплуатации, и/или произведенных не уполномоченными на то лицами.
+Основываясь на знании местных условий и параметров электро-, газо- и водоснабжения, обслуживающая организация вправе требовать установку дополнительного оборудования (водяной и газовый фильтры, стабилизатор напряжения и т.д.).
+Авторизованные сервисные центры выполняют бесплатный ремонт изделия и (или) его частей в течение всего гарантийного срока эксплуатации при обнаружении в изделии дефектов производственного происхождения. При обнаружении дефектов оборудования, возникших в результате неквалифицированного монтажа или эксплуатации, все услуги авторизованного сервисного центра по ремонту являются платными. Все дефектные изделия, замененные при гарантийном ремонте, являются собственностью ООО «Штибель Эль­трон» и не могут быть оставлены потребителю.
+Диагностика и ремонт оборудования, проводимые в случае необоснованности претензий к работоспособности изделий, является платной услугой и оплачивается Потребителем. Ремонт, проводимый вне рамок данной гарантии, оплачивается в соответствии с существу­ющим прейскурантом сервисного центра.
+После прохождения гарантийного ремонта гарантийный срок продлевается на период нахождения изделия в ремонте.
+Изделие, имеющее трех-контактную сетевую вилку, обязательно должно быть заземлено!
+
+В случае утери гарантийный талон не возобновляется!
+
+* при наличии услуги монтажа
+
+			</div>	
 		</div>	
 	</div>	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
-	
-    </body>
+</main>
+<footer>
+	<div class="uk-section uk-section-muted footer-wrapper">
+		<div class="uk-container">
+			<div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+				<div>
+					<ul class="uk-nav uk-nav-default footer-catalogue uk-margin-medium-left uk-text-center uk-text-left@m">
+						<li class="uk-nav-header uk-active uk-padding-remove-bottom"><a href="index.html"><img src="image/stiebel-eltron.svg" width="270" alt="Stiebel Eltron"></a></li>
+						<div class="uk-navbar-subtitle uk-text-normal uk-text-small uk-margin-remove-top uk-padding-remove-top"><span class="uk-text-danger logo-bottom brand-name">stiebel-gmbh.ru</span><span class="uk-text-secondary logo-bottom">-официальный дилер</span></div>
+						<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:+74955653482">+7 495 565 34 82</a></p>
+						<p><span uk-icon="receiver" class="uk-margin-small-right"></span><a href="tel:++78003332174">+7 (800) 333 21 74</a></p>
+						<p><span uk-icon="mail" class="uk-margin-small-right"></span><a href="mailto:info@stiebel-gmbh.ru">info@stiebel-gmbh.ru</a></p>
+						<p><span uk-icon="youtube" class="uk-margin-small-right"></span>Наш канал на YouTube</p>
+					</ul>
+				</div>
+				<div>
+					<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">
+						<li class="uk-nav-header uk-text-normal uk-margin-small-bottom">Каталог</li>
+						<li><a href="#">Водонагреватели</a></li>
+						<li><a href="#">Конвекторы</a></li>
+						<li><a href="#">Сушилки</a></li>
+						<li><a href="#">Обогреватели</a></li>
+						<li><a href="#">Тепловентиляторы</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">						
+						<li class="uk-nav-header uk-text-normal uk-margin-small-bottom">Информация</li>
+						<li><a  href="#modal-center" uk-toggle>Рейтинг магазина</a></li>
+							<div id="modal-center" class="uk-flex-top" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body uk-width-auto uk-margin-auto-vertical">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<img src="image/rating_5_3.png" alt="Рейтинг магазина" uk-img/>
+							</div>
+							</div>
+								
+						<li><a href="#">Гарантия</a></li>	
+						<li><a href="#">Сертификаты</a></li>	
+						<li><a href="#">Условия возврата</a></li>	
+						<li><a href="#">Политика конфиденциальности</a></li>	
+					
+					</ul>	
+				</div>
+				<div>
+					<ul class="uk-nav uk-nav-default uk-margin-medium-left footer-catalogue uk-text-center uk-text-left@m">
+						<li class="uk-nav-header uk-text-normal uk-margin-small-bottom">О компании</li>
+						<li><a href="#">О бренде Stiebel Eltron</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Новости и статьи</a></li>
+						
+					</ul>	
+				</div>
+			</div>
+
+		</div>
+	</div>
+</footer>
+</div>
+</body>
 </html>
