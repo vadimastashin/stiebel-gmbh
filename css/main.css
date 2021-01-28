@@ -68,6 +68,38 @@ h3.garanty {
 	font-weight: 700;
 }
 
+/* Slick Slider*/
+
+#products-compare .slider-compare {
+	width: 100%;	
+}
+
+#products-compare .slider-compare .img {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 2%;
+    position: relative;
+}
+
+#products-compare .slider-compare .action{
+	display:block;
+	margin: 100px auto;
+	width:100%;
+	text-align:center;
+}
+
+.slider-compare .action a {
+	display:inline-block;
+	padding:5px 10px; 
+	background:#f30;
+	color:#fff;
+	text-decoration:none;
+}
+
+
+/* Slick Slider End*/
+
 footer {
 	width: 100%;
 	height: auto;
